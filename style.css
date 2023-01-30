@@ -53,7 +53,13 @@ header a:hover {
 .nav-list{
   list-style: none;
   display: flex;
-  animation: 0.5s
+  animation: slide 6s steps(4) infinite;
+  font-weight: 700;
+
+
+}
+#works {
+  animation: slide 6s steps(4) infinite;
 }
 
 .nav-list li{
@@ -80,7 +86,8 @@ header a:hover {
 .name{
   justify-content: space-around;
   font-size: 40px;
-  font-style: bold;
+  font-family: 'Inter', sans-serif;  
+  font-weight: 700;
 }
 
 .name a{
@@ -96,16 +103,16 @@ header a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  font-family: 'Inter';
-  font-style: bold;
+  font-family: 'Inter', sans-serif;  
+  font-weight: 700;
   font-size: 15px;
   margin-top: 10px;
 }
 
 .desc{
   color: #909090;
-  font-family: 'Inter';
-  font-style: bold;
+  font-family: 'Inter', sans-serif;  
+  font-weight: 200;
   font-size: 15px;
   margin-top: 20px;
   width: 480px;
@@ -120,7 +127,7 @@ header a:hover {
   top: 50px;
   border-radius: 10px;
   text-decoration: none;
-  font-style: bold;
+  font-weight: 700;
 }
 
 .bn5:before {
@@ -367,7 +374,7 @@ footer img{
 .works-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 100px;
   grid-row-gap: 100px;
   
