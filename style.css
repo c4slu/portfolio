@@ -627,7 +627,8 @@ footer img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0px 50px;
+    margin: 30px 60px;
+    height: 45px
   }
 
 
