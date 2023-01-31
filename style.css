@@ -24,15 +24,19 @@ body{
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #fff;
-}
+  background: linear-gradient(242.76deg, #171721 -0.1%, #0E0E14 101.88%);
+  background-size: cover;
 
+}
 .loading-bar {
+  display: flex;
+  flex-direction: inline-reverse;;
   width: 4px;
   height: 18px;
   margin: 0 8px;
   border-radius: 4px;
   animation: loading 1s ease-in-out infinite;
+  background: linear-gradient(118.87deg, #9999FF 40%, #4c5781 99.32%);
 }
 
 @keyframes loading {

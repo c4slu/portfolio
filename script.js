@@ -27,7 +27,7 @@
   
   window.addEventListener("load", function() {
     var loader = document.getElementsByClassName("loader")[0];
-    loader.style.opacity = 0;
+    loader.style.opacity = 1;
     setTimeout(function() {
       loader.style.display = "none";
     }, 1000);
