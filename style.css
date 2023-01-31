@@ -4,8 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 body{
   background: linear-gradient(242.76deg, #171721 -0.1%, #0E0E14 101.88%);
   background-size: cover;
@@ -13,7 +11,6 @@ body{
 
 
 }
-
 .loader {
   display: flex;
   justify-content: center;
@@ -27,6 +24,10 @@ body{
   background: linear-gradient(242.76deg, #171721 -0.1%, #0E0E14 101.88%);
   background-size: cover;
 
+  opacity: 0.95;
+  transition: 10s
+
+
 }
 .loading-bar {
   display: flex;
@@ -38,7 +39,6 @@ body{
   animation: loading 1s ease-in-out infinite;
   background: linear-gradient(118.87deg, #9999FF 40%, #4c5781 99.32%);
 }
-
 @keyframes loading {
   0% {
     transform: scale(1);
@@ -51,59 +51,51 @@ body{
   }
 }
 
-
-
-header a {
-  background: linear-gradient(118.87deg, #9999FF 40%, #4c5781 99.32%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.navbar a{
   text-decoration: none;
-
-}
-
-header a:hover {
-  background: linear-gradient(118.87deg, #c6c6ff 40%, #afc0fc 99.32%);
+  background: linear-gradient(118.87deg, #9999FF 40%, #6a6ab1 99.32%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-}
-
-#logo{
-  transform: scale(0.08);
-  align-items: center;
-  margin-left: -22em;
-  
-  
-}
-
-.logo{
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 8vh;
-  font-style: bold;
-  transition: .5s;
-
-
-}
-
-.nav-list{
-  list-style: none;
-  display: flex;
-  animation: slide 6s steps(4) infinite;
+  font-size: 18px;
   font-weight: 700;
-
-
 }
+
+.navbar a:hover{
+
+  transition: all 0.5s ease;
+
+  opacity: .5;
+
+
+
+  
+}
+
+.navbar{
+
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: space-between;
+  margin: 20px 80px
+}
+
+.navbar img{
+  height: 80%;
+  
+}
+
+.navbar img:hover{
+  opacity: 0.7;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+
+
+
 #works {
   animation: slide 6s steps(4) infinite;
-}
-
-.nav-list li{
-  letter-spacing: 3px;
-  margin-left: 32px;
-  font-size: 15px;
 }
 
 .container-about{
@@ -556,62 +548,87 @@ footer img{
 /* WORK 3 */ 
 /* WORK 3 */
 
-.work3 {  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: #9999FF solid 1px;
-  border-radius: 20px;
-  border-top: none;
 
-  width: 511px;
-  height: 345px;
+@media (max-width: 600px) {
+  .mac{
+    display: none;
+  }
 
-  position: relative;
-  
-}
-.work3 .title {
-  position: absolute;
-  top: -25px;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-  text-align: enter;
-}
-.work3 .desc {
-  position: absolute;
-  top: -25px;
-  font-weight: bold;
-  font-size: 12px;
-  color: #909090;
-  text-align: center;
-}
-.work3 .container{
-  border-radius: 20px;
-  
-  height: 80%;
-  width: 80%;
-  
-  cursor: pointer;
-}
-.work3 span { 
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  height: 100%;
-  width: 100%;
-  
-  border-radius: 20px;
+  .navbar{
 
-  background: url(./src/img/project1.jpg) center center no-repeat;
-  background-size: cover;
-}
-.work3 div:hover{
-  opacity: 0.2;
-  transition: 0.3s;
+    margin: 40px 40px;
 
-  z-index: 0 
-}
+  }
 
+  .about .name{
+    display: flex;
+    font-size: 22px;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .about .desc{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px 20px;
+  }
+
+  .about .developer{
+
+    font-size: 13px;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+  
+  }
+
+  .works-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+  
+  }
+
+  .works-grid a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work1{
+    height: 20rem;
+    width: 20rem;
+  
+  }
+  .work2{
+    height: 20rem;
+    width: 20rem;
+  
+  } 
+
+  .conteiner-media .media{
+    margin: 0 20px 
+  }
+
+  .line {
+    display: flex;
+    margin-top: 300px;
+  }
+
+  .bn5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+  }
+
+
+}
