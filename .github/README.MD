@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![GitHub](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)
 
-<div align="center"><h1> <img src="..\src\img\cover.png"/></h1>
+<div align="center"><h1> <img src="..\src\img\Cover.png"/></h1>
 # About
 Coleção de trabalhos, projetos e realizações que demonstram as habilidades, competências e experiências minhas.
 
